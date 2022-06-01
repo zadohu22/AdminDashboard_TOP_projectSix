@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap");
 *,
 *::before,
 *::after {
@@ -5,6 +6,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Playfair Display', sans-serif;
 }
 
 .spanTwoRows {
@@ -28,21 +33,336 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
-  border: 1px solid red;
   display: -ms-grid;
   display: grid;
-  background-color: lightblue;
+  background-color: #1992d4;
   color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sbItem {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+  position: relative;
+  bottom: 20px;
+}
+
+.dashboardImg {
+  position: relative;
+  right: 20px;
+  width: 60px;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeImg {
+  position: relative;
+  right: 20px;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileImg {
+  position: relative;
+  right: 20px;
+}
+
+.messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.messagesImg {
+  width: 40px;
+  height: auto;
+  position: relative;
+  right: 20px;
+}
+
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.historyImg {
+  position: relative;
+  right: 20px;
+  width: 40px;
+}
+
+.tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.tasksImg {
+  position: relative;
+  right: 20px;
+  width: 40px;
+}
+
+.communities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.communitiesImg {
+  position: relative;
+  right: 20px;
+  width: 40px;
+}
+
+.settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.settingsImg {
+  position: relative;
+  right: 20px;
+  width: 40px;
+}
+
+.support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.supportImg {
+  position: relative;
+  right: 20px;
+  width: 40px;
+}
+
+.privacy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.privacyImg {
+  position: relative;
+  right: 20px;
+  width: 40px;
 }
 
 .header {
   -ms-grid-column: 2;
   grid-column: 2;
-  border: 1px solid green;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
+  padding: 20px;
+}
+
+.searchBar {
+  margin-left: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.searchBar input {
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background-color: grey;
+  padding: 5px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.searchBar label {
+  display: inline-block;
+  background-image: url(magnify.png);
+  background-size: contain;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 8px;
+}
+
+.helloUser {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: 2 / 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 2fr;
+      grid-template-columns: 100px 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.helloUser p {
+  position: relative;
+  top: 8px;
+}
+
+.helloUser h2 {
+  position: relative;
+  top: 5px;
+}
+
+.helloUser .image {
+  grid-row: span 2;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-image: url(panda.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 75px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 55px;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.userInfo h2 {
+  font-size: 20px;
+}
+
+.bellIcon {
+  background-image: url(bell.png);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 5px;
+  left: 15px;
+}
+
+.profilePicSmall {
+  background-image: url(panda.png);
+  height: 50px;
+  width: 50px;
+  position: relative;
+  background-size: contain;
+  margin: 0px 10px;
+  background-repeat: no-repeat;
+}
+
+.actionButtons {
+  -ms-grid-row-align: end;
+      align-self: end;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.actionButtons button {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: none;
+  width: 100px;
+  background-color: #1992d4;
+  border: 1px solid #1992d4;
+  color: white;
+  cursor: pointer;
+}
+
+.actionButtons button:hover {
+  border: 1px solid #1992d4;
+  background-color: #fff;
+  color: #1992d4;
 }
 
 .main {
@@ -51,8 +371,11 @@
   -ms-grid-columns: 4fr 1fr;
       grid-template-columns: 4fr 1fr;
   gap: 20px;
-  background-color: grey;
+  background-color: #e2e8f0;
   padding: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .projectCards {
@@ -60,9 +383,9 @@
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  background-color: grey;
+  background-color: #e2e8f0;
   padding: 30px;
-  gap: 20px;
+  gap: 40px;
 }
 
 .card {
@@ -74,11 +397,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-left: 5px solid blue;
+  border-left: 5px solid #f0b52c;
   background-color: white;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
   border-radius: 5px;
+  padding: 20px;
+  height: 200px;
 }
 
 .sideCards {
@@ -86,11 +411,175 @@
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  -ms-grid-rows: 40px 1fr 40px 1fr;
+      grid-template-rows: 40px 1fr 40px 1fr;
+  gap: 10px;
 }
 
 .sideCard {
-  border: 1px solid black;
-  height: 200px;
-  width: 100px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 20px;
+  height: 100%;
+  gap: 10px;
+}
+
+.sideCardTitle {
+  font-weight: 800;
+  font-size: .9rem;
+}
+
+.sideCardContent {
+  font-size: .7rem;
+}
+
+.sideCard hr {
+  color: lightgray;
+}
+
+.trendingCard {
+  display: -ms-grid;
+  display: grid;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 20px;
+  height: 100%;
+  gap: 10px;
+}
+
+.trending {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .3fr 1fr;
+      grid-template-columns: .3fr 1fr;
+  min-width: 282px;
+}
+
+.trending1 {
+      grid-template-areas: "img1 handle1" "img1 desc1";
+}
+
+.trending2 {
+      grid-template-areas: "img2 handle2" "img2 desc2";
+}
+
+.trending3 {
+      grid-template-areas: "img3 handle3" "img3 desc3";
+}
+
+.trending4 {
+      grid-template-areas: "img4 handle4" "img4 desc4";
+}
+
+.image1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img1;
+  background-image: url(man.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.image2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img2;
+  background-image: url(panda.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.image3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img3;
+  background-image: url(woman.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.image4 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img4;
+  background-image: url(man2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.handle1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: handle1;
+}
+
+.handle2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: handle2;
+}
+
+.handle3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: handle3;
+}
+
+.handle4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: handle4;
+}
+
+.handleDesc1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: desc1;
+}
+
+.handleDesc2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: desc2;
+}
+
+.handleDesc3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: desc3;
+}
+
+.handleDesc4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: desc4;
 }
 /*# sourceMappingURL=styles.css.map */
